@@ -1,0 +1,1240 @@
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body > div {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Navigation */
+.section1 {
+  position: relative;
+  background-color: #0e1726;
+}
+
+.section1::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: 0;
+  bottom: 0;
+  left: -200px;
+  background-image: url(../images/bggradient.png), url(../images/Line.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.6;
+}
+
+.section2 {
+  position: relative;
+}
+
+.section2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/Line_lowsize.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.container {
+  max-width: 1040px !important;
+}
+
+/* Section 1 BPAKM Style */
+.quote {
+  position: relative;
+}
+
+.bg-dark {
+  background-color: #0e1726 !important;
+}
+
+.container-left{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  height:100%;
+}
+
+.aboutbpakm {
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.titlepage {
+  text-align: left;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 110px;
+  padding-top: 12px;
+}
+
+.aboutdesc {
+  padding-top: 12px;
+  padding-right: 26px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Section Kegiatan Kami*/
+.title {
+  font-weight: 600;
+  line-height: 4.375rem;
+}
+.description {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #737b7d;
+}
+
+.card-kegiatankami .card {
+  margin-top: 5.6rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  border-radius: 1rem !important;
+}
+
+.card-kegiatankami .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-body .card-title {
+  color: #1a1a1a;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+.card-body {
+  color: #737b7d;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.card-kegiatankami .component-products .products-thumbnail {
+  width: 100%;
+  height: 215px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.card-kegiatankami .component-products .products-thumbnail .products-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border-radius: 0.425rem;
+  padding: 1rem 1rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #044bd9;
+  border-color: #285e8e; /*set the color you want here*/
+}
+
+/* Section Produk kami */
+.component-products {
+  margin-bottom: 50px;
+}
+
+.component-products .products-text {
+  font-size: 30px;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.component-products .products-thumbnail {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.component-products .products-thumbnail .zoom {
+  position: inherit;
+  overflow: hidden;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+.component-products .products-thumbnail .zoom:hover {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.component-products .products-thumbnail .products-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-produk-kami {
+  border: none;
+  border-radius: none;
+}
+
+/* Section Tata cara peminjaman */
+.previewimage {
+  margin-top: 90px;
+}
+.previewimage img {
+  width: 100%;
+}
+
+/* section Artikel */
+.card-kegiatankami .card-body .card-date {
+  font-size: 12px;
+  color: #1a1a1a;
+  opacity: 0.3;
+}
+
+.card-artikel .card-body {
+  font-size: 14px;
+  line-height: 26px;
+  color: #737b7d;
+}
+
+.card-artikel .card-body {
+  font-size: 14px;
+  line-height: 26px;
+  color: #737b7d;
+}
+
+.card-text {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: 200;
+  color: #737b7d;
+}
+
+.card-text h1,
+h2,
+h3 {
+  font-size: 1rem;
+}
+
+.author-section {
+  padding-bottom: 0px;
+  padding: 1rem;
+}
+
+.author-sectionartikel {
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding: 1rem;
+}
+
+.author-section .c-details {
+  max-width: 115px;
+  margin-left: 1rem;
+}
+
+.author-section .c-details h6 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #044bd9;
+}
+
+.author-section .lihatlebih {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  color: #044bd9;
+  font-weight: 600;
+}
+
+.author-section .image {
+  width: 50px;
+  height: 50px;
+}
+
+.author-section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+}
+
+/* Section Footer */
+.footer-bg {
+  position: relative;
+  background-color: #0e1726;
+  z-index: 1;
+}
+
+.footer-bg::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: -200px;
+  background-image: url(../images/bggradient.png), url(../images/Line.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.6;
+  z-index: -1;
+}
+.footer-section {
+  padding-top: 75px;
+}
+
+.footer-left {
+  margin-bottom: 30px;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.footer-left .footer-logo {
+  margin-bottom: 24px;
+}
+
+.footer-left .footer-logo a {
+  display: inline-block;
+}
+
+.footer-left .footer-logo img {
+  height: 45px !important;
+}
+
+.footer-left .footer-desc-bpa {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-weight: lighter !important;
+}
+
+.footer-left .footer-social {
+  padding-top: 25px;
+}
+
+.footer-left .footer-social a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  color: #044bd9;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-left .footer-social a:hover {
+  background: #044bd9;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-widget {
+  margin-bottom: 30px;
+}
+
+.footer-widget h5 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+.footer-widget ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-widget ul li {
+  list-style: none;
+}
+
+.footer-widget ul li .inactiveLink {
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.8;
+  pointer-events: none;
+  cursor: default;
+}
+
+.footer-widget ul li a {
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.footer-widget ul li a:hover {
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+  opacity: 1;
+}
+
+.copyright-reserved {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 0px;
+  margin-top: 45px;
+}
+
+.copyright-reserved .copyright-text {
+  float: center;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.6;
+}
+.copyright-reserved .copyright-text span {
+  float: center;
+  font-size: 16px;
+  color: #044bd9;
+}
+
+/* Produk Kami Page */
+.searchbox-custom {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.searchbox-custom label {
+  color: #7d8186;
+  font-size: 13px;
+}
+
+.searchbox-custom .form-control {
+  color: #1a1a1a;
+  font-size: 16px;
+  padding-left: 0;
+  border: none;
+}
+
+.searchbox-custom .input-group-text {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #737b7d;
+}
+
+.searchbox-custom .space {
+  padding: 35px 22px 35px 22px;
+}
+
+.searchbox-custom button {
+  width: 100%;
+  margin-left: 22px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.searchbox-custom .btn {
+  text-transform: Uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.notify-badges-available {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  padding: 3px 8px;
+  background-color: #e7efe4;
+  color: #4b8e2f;
+  z-index: 1;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.notify-badges-notavailable {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  padding: 3px 8px;
+  background-color: #fadbe7;
+  color: #df276d;
+  z-index: 1;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.products-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #df276d;
+  margin-top: 12px;
+}
+
+.pagination .page-item:last-child a {
+  color: #1a1a1a;
+}
+
+.pagination > li > a {
+  background-color: white;
+  color: #afafaf;
+  border: none;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #1a1a1a;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.pagination > .active > a {
+  color: #1a1a1a !important;
+  background-color: transparent !important;
+  border: none;
+}
+
+.pagination > .active > a:hover {
+  background-color: transparent !important;
+  border: none;
+}
+
+/* Halaman Produk_kami_detail style */
+.page-content {
+  padding-top: 60px;
+}
+
+.detail-breadcrumbs .breadcrumb a {
+  color: rgba(26, 26, 26, 0.6);
+  font-weight: lighter;
+}
+
+.detail-breadcrumbs .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.detail-breadcrumbs .breadcrumb .breadcrumb-item {
+  color: rgba(26, 26, 26, 0.6);
+  font-weight: lighter;
+}
+
+.detail-breadcrumbs .breadcrumb .breadcrumb-item.active {
+  color: #044bd9 !important;
+  font-weight: bolder;
+}
+
+.detail-gallery {
+  margin-top: 30px;
+  padding-bottom: 130px;
+}
+
+.detail-gallery .img-wrapper {
+  overflow: auto;
+  height: 500px;
+}
+
+.detail-gallery .product-thumbnail {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-gallery .product-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-gallery .product-preview {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.detail-gallery .product-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-gallery .xzoom {
+  box-shadow: none;
+}
+
+.detail-gallery .xactive {
+  border: 3px solid #1d5ddd;
+  box-shadow: none;
+}
+
+.description-product .products-text {
+  font-size: 30px;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.description-product .btn-kontakwa {
+  background-color: #128c7e;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.description-product .btn-kontakwa:hover {
+  background-color: #fff;
+  border-color: #128c7e;
+  color: #128c7e;
+  font-size: 14px;
+}
+
+.description-product .btn-kontakwa .fa {
+  font-size: 20px !important;
+  padding-right: 12px;
+}
+
+.description-product .text-description-product {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #737b7d;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+/* Style Halaman Investors */
+
+.description-strukturorganisasi {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #737b7d;
+  text-align: left;
+}
+
+.carousel-laporan {
+  padding-top: 60px;
+  padding-bottom: 130px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-next-icon {
+  background-color: #1a1a1a;
+  opacity: 0.6;
+  padding: 18px;
+  background-size: 1.5rem;
+}
+
+.carousel-control-prev-icon {
+  background-color: #1a1a1a;
+  opacity: 0.6;
+  padding: 18px;
+  background-size: 1.5rem;
+}
+
+.carousel-laporan .products-text {
+  font-size: 22px;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.carousel-laporan .btn {
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 13px;
+  padding: 12px 0 12px 0;
+  margin-top: 2rem;
+}
+
+/* -start */
+
+/* Gozy Ganteng - Bagian Tentang Kami */
+.featuretentangkami {
+  margin-bottom: 40px;
+  text-align: left;
+  padding: 0px 12px;
+}
+
+.featuretkimage {
+  width: 100%;
+  height: 475px;
+}
+.featuretkimage img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.featuretkimage-visi {
+  width: 100%;
+  height: 350px;
+}
+.featuretkimage-visi img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.contentfeaturetk {
+  padding: 20px 10px 20px 10px;
+}
+
+.titletk {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4.375rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.textisitk {
+  text-align: justify;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 32px;
+  color: black;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+/* Gozy Ganteng - Bagian artikel */
+
+.featureimage {
+  width: 100%;
+  height: 520px;
+}
+.featureimage img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.featureartikel {
+  margin-bottom: 40px;
+  text-align: left;
+  padding: 0px 12px;
+}
+
+.contentfeatureartikel {
+  background-color: #ffffff;
+}
+
+.textdatefeature {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+  color: black;
+  opacity: 0.5;
+  margin-bottom: 16px;
+  padding-left: 1rem;
+}
+
+.titleartikelfeature {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0px;
+  color: #121212;
+  margin-bottom: 16px;
+  padding-left: 1rem;
+}
+
+.titleartikeldetail {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #121212;
+  max-width: 900px;
+  padding-left: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.separatorsection {
+  color: black;
+  opacity: 0.3;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.textbodyartikel {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 200;
+  padding-left: 1rem;
+  color: #737b7d;
+}
+
+.textbodyartikel h3,
+h2,
+h1 {
+  font-size: 16px;
+}
+
+.listartikel {
+  background-color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.listartikel-thumbnail {
+  background: #f5f6f8;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.listartikel-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: round; */
+}
+
+.contentlistartikel {
+  margin-top: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.titlelist {
+  display: flex;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0px;
+  color: #121212;
+  margin-bottom: 16px;
+  padding-left: 1rem;
+}
+
+.textbodylist {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: 200;
+  padding-left: 1rem;
+  color: #737b7d;
+}
+
+.textbodylist h3,
+h2,
+h1 {
+  font-size: 16px;
+}
+
+.row-featureartikel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.isiartikel {
+  text-align: justify;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.isiartikel img {
+  display: flex;
+  margin: 0 auto;
+  height: 100% !important;
+  width: 100% !important;
+  max-height: 550px !important;
+  max-width: 700px !important;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+.subjudulartikel {
+  font-size: 28px;
+  font-weight: 500px;
+  line-height: 40px;
+  color: #121212;
+  margin-bottom: 24px;
+}
+
+.textartikel {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  color: #121212;
+  opacity: 70%;
+  margin-bottom: 60px;
+}
+
+.linenextartikel {
+  border-top: 1px solid #dedede;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.btnlihatsemua {
+  padding: 0px 0px 0px 0px;
+  text-align: right;
+}
+
+.btnbackartikel {
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+/* Gozy Ganteng - Bagian video */
+
+.video-thumbnail {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.video-thumbnail .products-video {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row-titlevideo {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 3rem;
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.text-titlevideo {
+  font-size: 15px;
+  font-weight: 300;
+  margin: auto;
+  color: #1a1a1a;
+}
+
+/* Gozy Ganteng - Bagian card galeri */
+
+.card-galeri {
+  margin-top: 5rem;
+  width: 100%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  border-radius: 8px !important;
+}
+
+.card-galeri:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-bodygaleri .card-titlegaleri {
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 300;
+  line-height: 2.25rem;
+}
+
+.card-bodygaleri {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.card-galeri .component-galeri .galeri-thumbnail {
+  width: 100%;
+  height: 215px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.card-galeri .component-galeri .galeri-thumbnail .products-galeri {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Image Overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: transparent;
+  margin: 5% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-header h2 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.modal-header {
+  background: rgba(35, 34, 33, 0.8);
+  padding: 15px;
+  border-bottom: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  padding: 10px 20px;
+  background: rgba(35, 34, 33, 0.6);
+  justify-content: center;
+}
+
+.list-foto {
+  margin-bottom: 12px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.list-foto img {
+  object-fit: cover;
+  width: 100%;
+  height: 165px;
+  border-radius: 4px;
+  border: #aeaeae;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* -end- */
+
+/* Mobile Style */
+@media only screen and (max-width: 600px) {
+  .titlepage {
+    font-size: 80px;
+  }
+  .aboutdesc {
+    font-size: 12px;
+  }
+  .navbar {
+    z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .searchbox-custom .space:not(.noborder-mobile) {
+    padding: 35px 22px 35px 22px;
+    border-bottom: 1px solid #ddd;
+  }
+  .detail-gallery .img-wrapper {
+    height: 100%;
+  }
+  .searchbox-custom .search-mobile {
+    width: 100%;
+  }
+  .searchbox-custom button {
+    width: 100%;
+    margin-left: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+  .detail-gallery .product-thumbnail img {
+    width: 100% !important;
+  }
+  .detail-gallery .xzoom-gallery {
+    margin-left: 0 !important;
+  }
+  .title {
+    line-height: 3.375rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: 0;
+    left: -560px;
+    background-image: url(../images/left_quote.png);
+    background-size: 58px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.4;
+  }
+
+  .quote::after {
+    content: "";
+    position: absolute;
+    top: 233px;
+    right: -500px;
+    bottom: 0;
+    left: 0px;
+    background-image: url(../images/right_quote.png);
+    background-size: 58px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.4;
+  }
+}
